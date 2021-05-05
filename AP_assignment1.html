@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://res.cloudinary.com/dcpipxb1h/raw/upload/v1620218961/styling_pixkuh.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    </head>
+    <title>
+        CovInfo
+    </title>
+    <link rel = "icon" href = "https://res.cloudinary.com/dcpipxb1h/image/upload/v1620207021/favicon_nf2jul.png" type = "image/x-icon">
+    <body>
+        <nav class="navigation-bar">
+            <div class="container">
+                <ul class="nav-bar-list">
+                    <li class="active-nav"><a href="https://res.cloudinary.com/dcpipxb1h/raw/upload/v1620219393/AP_assignment1_ixkvl3.html" style="text-align: right;">Home</a></li>
+                    <li class="member"><a href="https://www.cowin.gov.in/home" target="_blank">Vaccine Registration</a></li>
+                    <li class="member"><a href="https://www.mohfw.gov.in/pdf/StatewiseCovidHospitalslink19062020.pdf" target="_blank" style="text-align: right;">State-Wise Covid 19 Hospitals Status</a></li>
+                    <li class="member"><a href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/5?id=DASHBOARD_601b9e214c7a6b689d76f493&utm_source=MyGovS4S&utm_medium=MyGovS4Sweb&tabId=5&home=1" target="_blank" style="text-align: right;">COVID-19 Resources</a></li>
+                    <li class="member"><a href="//FAQs.html" style="text-align: right;">FAQs</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="slideshow-container" style="padding-top: 20px;">
+            <div class="mySlides fade">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/D9tTi-CDjDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="https://res.cloudinary.com/dcpipxb1h/image/upload/v1620207021/ProtectivemeasuresEng-1_x9euft.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://res.cloudinary.com/dcpipxb1h/image/upload/v1620208107/Screenshot_2021-05-05_151630_xerwjk.jpg" style="width:100%">
+            </div>
+            <a href="tel:1075">
+                <div class="mySlides fade">
+                    <img src="https://res.cloudinary.com/dcpipxb1h/image/upload/v1620208107/Screenshot_2021-05-05_151652_zhrc6p.jpg" style="width:100%">
+                </div>
+            </a>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+            
+
+        <h3 style="text-align: center;">Vaccination Statistics</h3>
+        <table id="vaccine-stat" style="text-align: center;">
+            <tr>
+              <th>Total Vaccination Doses</th>
+              <th>Dose 1 Vaccine</th>
+              <th>Dose 2 Vaccine</th>
+            </tr>
+            <tr>
+              <td>1577.89 + Lakh</td>
+              <td>1286.47 + Lakh</td>
+              <td>291.42 + Lakh</td>
+            </tr>
+            <tr>
+                <td>+67930</td>
+                <td>+33246</td>
+                <td>+34684</td>
+            </tr>
+            <tr>
+                <th>Total Vaccinated - Male</th>
+                <th>Total Vaccinated - Female</th>
+                <th>AEFI Reported</th>
+            </tr>
+            <tr>
+                <td>675.95 + Lakh</td>
+                <td>616.01 + Lakh</td>
+                <td>20025</td>
+              </tr>
+              <tr>
+                  <td>+521026</td>
+                  <td>+410640</td>
+                  <td>+36</td>
+              </tr>
+        </table>
+            <h3 style="text-align: center;">COVID 19 Statistics</h3>
+            <table id="covid19-stat" style="text-align: center;">
+                <tr>
+                    <th>STATE NAME: </th>
+                    <th>TOTAL CONFIRMED: </th>
+                    <th>CURED/ DISCHARGED/<br> MIGRATED: </th>
+                    <th>DEATH: </th>
+                    <th>WHATSAPP CHATBOT URL: </th>
+                    <th>FB CHATBOT URL: </th>
+                    <th>E-PASS URL: </th>
+                </tr>
+                <tr>
+                    <td>Andaman and Nicobar</td>
+                    <td>6181</td>
+                    <td>5879</td>
+                    <td>70</td>
+                    <td><a href="https://wa.me/919013151515">WA Link</a></td>
+                    <td><a href="https://www.facebook.com/MyGovArunachalPradesh/">FB Link</a></td>
+                    <td><a href="https://southandaman.nic.in/whos-who/">E-Pass Link</a></td>
+                </tr>
+                <tr>
+                    <td>Andhra Pradesh</td>
+                    <td>1184028</td>
+                    <td>1016142</td>
+                    <td>8289</td>
+                    <td><a href="https://wa.me/918297104104?text=Hi">WA Link</a></td>
+                    <td><a href="https://m.me/ArogyaAndhra">FB Link</a></td>
+                    <td><a href="https://www.spandana.ap.gov.in/">E-Pass Link</a></td>
+                </tr>
+                <tr>
+                    <td>Arunachal Pradesh</td>
+                    <td>19192</td>
+                    <td>17501</td>
+                    <td>59</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Assam</td>
+                    <td>267925</td>
+                    <td>237088</td>
+                    <td>1430</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="https://eservices.assam.gov.in/directApply.do?serviceId=1533">E-Pass Link</a></td>
+                </tr>
+                <tr>
+                    <td>Bihar</td>
+                    <td>523841</td>
+                    <td>410484</td>
+                    <td>2926</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="https://covid19.bihar.gov.in/">E-Pass Link</a></td>
+                </tr>
+
+            </table>
+
+
+            
+
+    </body>
+</html>
