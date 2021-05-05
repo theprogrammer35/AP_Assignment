@@ -5,6 +5,7 @@ This website is developed by Aviral Verma for Application Programming Project.
 
 This website contains all the data sources and FAQs related to COVID 19.
 If there is a problem viewing this website then checkout the following URL:
+
 https://covinfo.aviral.live/
 
 https://eloquent-goldwasser-0a4ea4.netlify.app/
